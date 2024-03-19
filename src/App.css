@@ -68,3 +68,42 @@ main {
   height: 2rem;
   color: beige;
 }
+
+
+.form-wrap {
+  width: 100%;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.title {
+  width: 12rem;
+  height: 3rem;
+  margin-left: 5rem;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+::placeholder {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.author {
+  width: 12rem;
+  height: 3rem;
+  margin-left: 3rem;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.submit {
+  margin-left: 15%;
+  position: absolute;
+  width: 8rem;
+  height: 3rem;
+  background-color: #009fbd;
+  color: beige;
+}

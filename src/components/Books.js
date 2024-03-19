@@ -2,6 +2,7 @@
 import React, {useState} from 'react'
 import { v4 as uuidv4 } from 'uuid';
 import BookList from './BookList';
+import AddBook from './AddBook';
 
 const Books = () => {
  const [books, setBooks] = useState([
@@ -21,12 +22,22 @@ const Books = () => {
         author: 'Suzzanne Collins',
     },
  ]);
+
+ function addNewBook(title, author) {
+    const newBook = {
+       id: uuidv4(),
+       title,
+       author,
+    };
+       setBooks([...books, newBook]);
+   };
+
   return (
     <div>
         <BookList books={books} />
         <hr/>
         <br/>
-      My Add Book Form goes here
+      <AddBook addNewBook={addNewBook} />
     </div>
 );
 };

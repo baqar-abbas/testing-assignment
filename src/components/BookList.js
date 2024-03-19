@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const BookList = ({books}) => {
   return (
@@ -16,5 +17,15 @@ const BookList = ({books}) => {
     </div>
   );
 }
+
+BookList.propTypes = {
+    books: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,
+            author: PropTypes.string.isRequired
+        }),
+    ).isRequired,
+    }
 
 export default BookList
