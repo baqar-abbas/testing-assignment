@@ -46,10 +46,10 @@ main {
   left: 2rem;
 }
 
-
 .book-wrap {
   margin: 5rem 3rem 1rem 2rem;
-  border-radius: 5px;
+
+  /* border-radius: 5px; */
   max-width: 100rem;
   background-color: rgb(255, 255, 251);
   padding: 1rem;
@@ -57,6 +57,7 @@ main {
 
 .book {
   padding: 10px 0;
+
   /* border: 1px solid grey;
   border-radius: 5px; */
 }
@@ -68,7 +69,6 @@ main {
   height: 2rem;
   color: beige;
 }
-
 
 .form-wrap {
   width: 100%;
