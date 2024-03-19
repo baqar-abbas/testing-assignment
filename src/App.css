@@ -42,6 +42,29 @@ main {
   max-width: 1200px;
   margin: 40px auto;
   position: absolute;
-  top: 5%;
+  top: 8%;
   left: 2rem;
+}
+
+
+.book-wrap {
+  margin: 5rem 3rem 1rem 2rem;
+  border-radius: 5px;
+  max-width: 100rem;
+  background-color: rgb(255, 255, 251);
+  padding: 1rem;
+}
+
+.book {
+  padding: 10px 0;
+  /* border: 1px solid grey;
+  border-radius: 5px; */
+}
+
+.remove {
+  background-color: #009fbd;
+  margin-left: 2rem;
+  width: 6rem;
+  height: 2rem;
+  color: beige;
 }
