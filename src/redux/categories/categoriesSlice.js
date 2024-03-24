@@ -1,9 +1,11 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit'; // Import createSlice to create a slice
 
+// Define the initial state
 const initialState = {
   categories: [],
 };
 
+// Create a categories slice using createSlice and define the reducer for checking the status
 const categoriesSlice = createSlice({
   name: 'categories',
   initialState,
@@ -15,5 +17,6 @@ const categoriesSlice = createSlice({
   },
 });
 
+// Export the action creator and the reducer
 export const { checkStatus } = categoriesSlice.actions;
 export default categoriesSlice.reducer;

@@ -10,6 +10,7 @@
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 10;
   min-height: 70px;
   display: flex;
   justify-content: flex-start;
@@ -57,7 +58,8 @@ main {
   padding: 10px 0;
 }
 
-.remove {
+.remove,
+.btn-status {
   background-color: #009fbd;
   margin-left: 2rem;
   width: 6rem;

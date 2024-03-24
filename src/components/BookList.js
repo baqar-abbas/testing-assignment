@@ -1,31 +1,30 @@
-/* eslint-disable */
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux'; // To access the state and dispatch actions
+import { removeBook } from '../redux/books/booksSlice'; // Import the removeBook action creator
 
-const BookList = ({books}) => {
+const BookList = () => {
+  // Access the books state from the store
+  const books = useSelector((state) => state.allbooks.books);
+  const dispatch = useDispatch();
   return (
     <div className="book-wrap">
-      {books.map(book => (
+      {books.map((book) => (
         <div key={book.id} className="book">
           <h3>{book.title}</h3>
           <p>{book.author}</p>
           <div>
-            <button type='button' className='remove'>Delete</button>
+            <button
+              type="button"
+              className="remove"
+              onClick={() => dispatch(removeBook(book.id))}
+            >
+              Delete
+            </button>
           </div>
         </div>
       ))}
     </div>
   );
-}
+};
 
-BookList.propTypes = {
-    books: PropTypes.arrayOf(
-        PropTypes.shape({
-            id: PropTypes.string.isRequired,
-            title: PropTypes.string.isRequired,
-            author: PropTypes.string.isRequired
-        }),
-    ).isRequired,
-    }
-
-export default BookList
+export default BookList;
