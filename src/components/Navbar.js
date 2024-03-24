@@ -1,10 +1,8 @@
-/* eslint-disable */
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
-  return (
-    <header>
+const Navbar = () => (
+  <header>
     <nav className="nav-bar">
       <div className="logo">BOOKSTORE CMS</div>
       <ul>
@@ -14,7 +12,6 @@ const Navbar = () => {
       </ul>
     </nav>
   </header>
-  );
-};
+);
 
 export default Navbar;
