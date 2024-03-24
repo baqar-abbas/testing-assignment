@@ -58,7 +58,8 @@ main {
   padding: 10px 0;
 }
 
-.remove, .btn-status {
+.remove,
+.btn-status {
   background-color: #009fbd;
   margin-left: 2rem;
   width: 6rem;
@@ -103,4 +104,3 @@ main {
   background-color: #009fbd;
   color: beige;
 }
-
