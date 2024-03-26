@@ -23,6 +23,8 @@ const Categories = () => {
 
   return (
     <>
+      <h2>Categories</h2>
+      <p>Select a category and press Check Status to filter books categorywise</p>
       <select onChange={(e) => setSelectedCategory(e.target.value)}>
         {categories.map((category) => (
           <option key={category} value={category}>
