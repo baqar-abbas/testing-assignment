@@ -50,6 +50,7 @@ const booksSlice = createSlice({
     });
     builder.addCase(deleteBook.fulfilled, (state, action) => {
       state.books = state.books.filter((book) => book.item_id !== action.payload.item_id);
+      // eslint-disable-next-line
       alert(action.payload.message);
     });
   },

@@ -2,7 +2,15 @@ import { createSlice } from '@reduxjs/toolkit'; // Import createSlice to create 
 
 // Define the initial state
 const initialState = {
-  categories: [],
+  categories: [
+    'Action',
+    'Biography',
+    'Fiction',
+    'Non-Fiction',
+    'Programming',
+    'Learning',
+    'Sci-Fi',
+  ],
 };
 
 // Create a categories slice using createSlice and define the reducer for checking the status
