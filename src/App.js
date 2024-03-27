@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Books from './components/Books';
 import Categories from './components/Categories';
 import About from './components/About';
+import Crud from './components/Crud';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<Books />} />
           <Route path="/Categories" element={<Categories />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Crud" element={<Crud />} />
         </Route>
       </Routes>
     </>
