@@ -104,3 +104,25 @@ main {
   background-color: #009fbd;
   color: beige;
 }
+
+.crud {
+  text-align: center;
+}
+
+.name-span {
+  margin-right: 20px;
+}
+
+.email-span {
+  margin-right: 40px;
+}
+
+.add-user {
+  margin-left: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form {
+  margin-bottom: 2rem;
+}
