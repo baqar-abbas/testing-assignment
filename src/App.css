@@ -1,22 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fafafa;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .nav-bar {
-  background-color: #2e3840;
+  /* background-color: #2e3840; */
+  background-color: #fff;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 10;
   min-height: 70px;
+  height: 5.938rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 3rem;
   padding-left: 5rem;
+  border-bottom: solid 1px #e8e8e8;;
 }
 
 .nav-bar ul {
@@ -29,14 +39,58 @@
 
 .nav-bar a {
   text-decoration: none;
-  font-size: 1.5rem;
-  color: whitesmoke;
-  padding-left: 2rem;
+  /* font-size: 1.5rem; */
+  /* color: whitesmoke; */
+  width: 3.688rem;
+  height: 1rem;
+  color: rgba(0, 0, 0, 0.9);
+  position: relative;
+  top: 10px;
+  /* padding-left: 2rem; */
+  margin: 1.125rem 2.563rem 0.688rem 0;
+  /* width: 3.688rem;
+  height: 1rem; */
+  font-family: Montserrat, sans-serif;
+  font-size: 0.913rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+}
+
+.nav-bar a:hover {
+  color: #121212;
+  font-weight: bold;
 }
 
 .logo {
-  color: whitesmoke;
-  font-size: 2rem;
+  color: #0290ff;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.875rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.oval {
+  width: 2.813rem;
+  margin-right: 1rem;
+  height: 2.813rem;
+  padding: 0.68rem;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  position: absolute;
+  right: 8%;
+}
+
+.user-oval {
+  width: 1.063rem;
+  height: 1.063rem;
+  color: #0290ff;
 }
 
 main {

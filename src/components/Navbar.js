@@ -1,5 +1,8 @@
+/* eslint-disable */
 import React from 'react';
+import { FaUser } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+import '../media-queries/navbar.css';
 
 const Navbar = () => (
   <header>
@@ -11,6 +14,9 @@ const Navbar = () => (
         <li><NavLink to="/About">About</NavLink></li>
         <li><NavLink to="/Crud">Crud Demo</NavLink></li>
       </ul>
+      <div className="oval">
+        <FaUser className="user-oval" />
+      </div>
     </nav>
   </header>
 );

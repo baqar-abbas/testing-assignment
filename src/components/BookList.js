@@ -29,7 +29,15 @@ const BookList = () => {
 
   // Display a loading message while the books are being fetched
   if (isLoading) {
-    return <p>please wait it is loading...</p>;
+    // return <p>please wait it is loading...</p>;
+    return (
+      <>
+        <p>please wait it is loading...</p>
+        <div className="spinner-border" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </>
+    );
   }
 
   // Display a message if there are no books available
