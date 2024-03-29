@@ -4,9 +4,9 @@
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
     main {
-        margin-top: 15rem;
+        margin-top: 12rem;
         left: 2rem;
     }
 
@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 570px) {
     main {
-        margin-top: 25rem;
+        margin-top: 14rem;
         left: 2rem;
     }
 }

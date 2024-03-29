@@ -324,7 +324,7 @@ main {
 .update-progress {
   width: 8.938rem;
   height: 1.125rem;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -350,40 +350,103 @@ main {
 
 .form-wrap {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
 }
 
 .form-container {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.title {
-  width: 12rem;
+.add-new-h2 {
+  color: #888;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  margin-left: 2.5rem;
+  margin-bottom: 1rem;
+}
+/* 
+.form {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.form-title {
+  /* width: 12rem;
   height: 3rem;
   margin-left: 5rem;
   font-size: 16px;
-  padding-left: 10px;
+  padding-left: 10px; */
+  width: 18rem;
+  height: 3.5rem;
+  margin-left: 2.5rem;
+  border-radius: 4px;
+  border: solid 2px #e8e8e8;
+  padding: 1rem;
 }
 
 ::placeholder {
-  padding-left: 10px;
+  padding-left: 4px;
   font-size: 16px;
 }
 
-.author {
-  width: 12rem;
+.form-author {
+  /* width: 12rem;
   height: 3rem;
   margin-left: 3rem;
   font-size: 16px;
-  padding-left: 10px;
+  padding-left: 10px; */
+  width: 18rem;
+  height: 3.5rem;
+  margin-left: 2rem;
+  border-radius: 4px;
+  border: solid 2px #e8e8e8;
+  padding: 1rem;
+}
+
+#category {
+  width: 18rem;
+  height: 3.5rem;
+  margin-left: 2rem;
+  border-radius: 4px;
+  border: solid 2px #e8e8e8;
+  padding: 1rem;
 }
 
 .submit {
-  margin-left: 15%;
+  /* margin-left: 15%;
   position: absolute;
   width: 8rem;
   height: 3rem;
   background-color: #009fbd;
-  color: beige;
+  color: beige; */
+  margin-left: 2rem;
+  /* position: absolute; */
+  width: 11.5rem;
+  height: 3.5rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+}
+
+.submit:hover {
+  background-color: #06a2c1;
+}
+
+.option-group {
+  font-size: 16px;
+  position: relative;
+  bottom: 2px;
 }
 
 .crud {
@@ -404,6 +467,6 @@ main {
   margin-bottom: 2rem;
 }
 
-.form {
+/* .form {
   margin-bottom: 2rem;
-}
+} */

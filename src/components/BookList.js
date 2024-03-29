@@ -112,7 +112,7 @@ const BookList = () => {
       <div className="next-prev-buttons">
         <button
           type="button"
-          class="btn btn-dark custom-button"
+          className="btn btn-dark custom-button"
           disabled={currentPage === 1}
           onClick={() => paginate(currentPage > 1 ? currentPage - 1 : currentPage)}
         >
@@ -120,7 +120,7 @@ const BookList = () => {
         </button>
         <button
           type="button"
-          class="btn btn-dark custom-button"
+          className="btn btn-dark custom-button"
           disabled={currentPage === Math.ceil(books.length / booksPerPage)}
           onClick={() => paginate(currentPage < Math.ceil(books.length / booksPerPage)
             ? currentPage + 1 : currentPage)}
