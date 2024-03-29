@@ -375,18 +375,7 @@ main {
   margin-bottom: 1rem;
 }
 
-/*
-.form {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
 .form-title {
-  /* width: 12rem;
-  height: 3rem;
-  margin-left: 5rem;
-  font-size: 16px;
-  padding-left: 10px; */
   width: 18rem;
   height: 3.5rem;
   margin-left: 2.5rem;
@@ -401,11 +390,6 @@ main {
 }
 
 .form-author {
-  /* width: 12rem;
-  height: 3rem;
-  margin-left: 3rem;
-  font-size: 16px;
-  padding-left: 10px; */
   width: 18rem;
   height: 3.5rem;
   margin-left: 2rem;
@@ -424,15 +408,7 @@ main {
 }
 
 .submit {
-  /* margin-left: 15%;
-  position: absolute;
-  width: 8rem;
-  height: 3rem;
-  background-color: #009fbd;
-  color: beige; */
   margin-left: 2rem;
-
-  /* position: absolute; */
   width: 11.5rem;
   height: 3.5rem;
   border-radius: 3px;
@@ -469,6 +445,3 @@ main {
   margin-bottom: 2rem;
 }
 
-/* .form {
-  margin-bottom: 2rem;
-} */
