@@ -1,0 +1,35 @@
+@media screen and (max-width: 940px) {
+    .percentage {
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        margin-top: 15rem;
+        left: 2rem;
+    }
+
+    .book {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    main {
+        margin-top: 25rem;
+        left: 2rem;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    main {
+        left: 1rem;
+    }
+
+    .book {
+        align-items: flex-start;
+    }
+}
