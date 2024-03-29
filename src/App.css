@@ -25,7 +25,7 @@ body {
   align-items: center;
   gap: 3rem;
   padding-left: 5rem;
-  border-bottom: solid 1px #e8e8e8;;
+  border-bottom: solid 1px #e8e8e8;
 }
 
 .nav-bar ul {
@@ -114,7 +114,7 @@ main {
   border: 2px solid #e8e8e8;
   border-radius: 4px;
   margin: 15px auto;
-  background-color: #f5f6fa
+  background-color: #f5f6fa;
 }
 
 .book-category {
@@ -150,7 +150,7 @@ main {
   width: 20.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0.35rem;
-  font-family:'Roboto Slab', serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.975rem;
   font-weight: 300;
   font-stretch: normal;
@@ -182,10 +182,10 @@ main {
 }
 
 .line {
-    width: 0.125rem;
-    height: 1.5rem;
-    margin: 0.75rem 1.063rem 0 0.938rem;
-    border: solid 1px #e8e8e8;  
+  width: 0.125rem;
+  height: 1.5rem;
+  margin: 0.75rem 1.063rem 0 0.938rem;
+  border: solid 1px #e8e8e8;
 }
 
 .delete {
@@ -204,9 +204,10 @@ main {
   background-color: #f5f6fa;
 }
 
-.edit-button:hover, .delete:hover {
+.edit-button:hover,
+.delete:hover {
   color: #009fbd;
-  font-size: 0.975rem;;
+  font-size: 0.975rem;
   text-decoration: underline;
 }
 
@@ -230,7 +231,6 @@ main {
   height: 6rem !important;
   color: #f5f6fa;
   background-color: #f5f6fa !important;
-
 }
 
 .progress-bar {
@@ -240,7 +240,7 @@ main {
 }
 
 .percentage {
-  align-self:flex-end;
+  align-self: flex-end;
   position: relative;
   padding-left: 5px;
   bottom: 30px;
@@ -311,14 +311,14 @@ main {
 }
 
 .update-btn {
-    width: 11.5rem;
-    height: 2.063rem;
-    margin: 0.75rem 0 0.563rem 3.688rem;
-    padding: 0.438rem 1.188rem 0.5rem 1.375rem;
-    border-radius: 3px;
-    background-color: #0290ff;
-    border: none;
-    cursor: context-menu !important;
+  width: 11.5rem;
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  cursor: context-menu !important;
 }
 
 .update-progress {
@@ -332,7 +332,7 @@ main {
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   position: relative;
   bottom: 5px;
 }
@@ -374,7 +374,8 @@ main {
   margin-left: 2.5rem;
   margin-bottom: 1rem;
 }
-/* 
+
+/*
 .form {
   display: flex;
   flex-wrap: wrap;
@@ -430,6 +431,7 @@ main {
   background-color: #009fbd;
   color: beige; */
   margin-left: 2rem;
+
   /* position: absolute; */
   width: 11.5rem;
   height: 3.5rem;
