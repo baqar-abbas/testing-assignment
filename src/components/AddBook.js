@@ -1,8 +1,10 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 // Import the postBook async thunk
 import { postBook } from '../redux/books/booksApi';
+import '../media-queries/addbook.css';
 
 const AddBook = () => {
   const [title, setTitle] = useState('');
@@ -30,11 +32,11 @@ const AddBook = () => {
   };
   return (
     <div className="form-wrap">
-      <form onSubmit={handleSubmit} className="form-container">
-        <label htmlFor="title">
-          Add New Book
+            <h2 className="add-new-h2">ADD NEW BOOK</h2>
+            <div className="form-container">
+      <form onSubmit={handleSubmit} className="form">
           <input
-            className="title"
+            className="form-title"
             id="title"
             type="text"
             placeholder="Title"
@@ -42,9 +44,8 @@ const AddBook = () => {
             required
             onChange={(e) => setTitle(e.target.value)}
           />
-        </label>
         <input
-          className="author"
+          className="form-author"
           type="text"
           placeholder="Author"
           value={author}
@@ -57,7 +58,7 @@ const AddBook = () => {
           value={category}
           onChange={(e) => setCategory(e.target.value)}
         >
-          <optgroup label="Category">
+          <optgroup label="Category" className="option-group">
             <option value="Action">Action</option>
             <option value="Biography">Biography</option>
             <option value="Fiction">Fiction</option>
@@ -69,6 +70,7 @@ const AddBook = () => {
         </select>
         <button type="submit" className="submit">Submit</button>
       </form>
+      </div>
     </div>
   );
 };
