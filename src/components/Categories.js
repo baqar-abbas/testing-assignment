@@ -23,39 +23,46 @@ const Categories = () => {
 
   return (
     <>
-      <h2>Categories</h2>
-      <p>Select a category and press Check Status to filter books categorywise</p>
-      <select onChange={(e) => setSelectedCategory(e.target.value)}>
-        {categories.map((category) => (
-          <option key={category} value={category}>
-            {category}
-          </option>
-        ))}
-      </select>
-      <button
-        type="button"
-        className="btn btn-status"
-        style={{
-          marginTop: '5rem', backgroundColor: '#009FBD', fontSize: '16px', height: '3em', width: '10rem',
-        }}
-        onClick={handleCheckStatus}
-      >
-        Check Status
-      </button>
-
-      {selectedCategory && hasCheckedStatus && filteredBooks.length === 0 ? (
-        <div>
-          <p>No books available for the selected category</p>
-        </div>
-      ) : (
-        filteredBooks.map((book) => (
-          <div key={book.item_id}>
-            <h3>{book.title}</h3>
-            <p>{book.author}</p>
-            <p>{book.category}</p>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h2 className="my-3 custom-font">Categories</h2>
+            <p className="custom-font">Select a category and press Check Status to filter books categorywise</p>
+            <select className="form-select my-3" onChange={(e) => setSelectedCategory(e.target.value)}>
+              {categories.map((category) => (
+                <option key={category} value={category}>
+                  {category}
+                </option>
+              ))}
+            </select>
+            <button
+              type="button"
+              className="btn btn-primary my-3"
+              onClick={handleCheckStatus}
+            >
+              Check Status
+            </button>
           </div>
-        ))
-      )}
+        </div>
+
+        {selectedCategory && hasCheckedStatus && filteredBooks.length === 0 ? (
+          <div className="row">
+            <div className="col-12">
+              <p>No books available for the selected category</p>
+            </div>
+          </div>
+        ) : (
+          filteredBooks.map((book) => (
+            <div className="row my-3" key={book.item_id}>
+              <div className="col-12">
+                <h3 className="custom-font-robo">{book.title}</h3>
+                <p className="custom-font">{book.author}</p>
+                <p className="custom-font">{book.category}</p>
+              </div>
+            </div>
+          ))
+        )}
+      </div>
     </>
   );
 };
