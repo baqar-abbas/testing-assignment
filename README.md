@@ -50,7 +50,7 @@ Your problem-solving skills <br/>
 Your resilience. <br/>
 Task <br/>
 Create a React web app. You can pick any topic you want. <br/>
-Create a React web app. You can pick any topic you want.<br/>
+The App should have at least 4 pages.<br/>
 The App should be connected to an API, and the user should be able POST, DELETE, UPDATE information.<br/>
 The App should display information from the API.<br/>
 The entire App should be responsive for small, medium, and large screens.<br/>
