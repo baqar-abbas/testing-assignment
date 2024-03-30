@@ -1,0 +1,57 @@
+@media screen and (max-width: 1316px) {
+  .submit {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1074px) {
+  #category {
+    margin-left: 2.5rem;
+  }
+
+  .submit {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .form-title {
+    width: 90%;
+  }
+
+  .form-author {
+    width: 90%;
+    margin-left: 40px;
+  }
+
+  #category {
+    width: 90%;
+  }
+
+  .submit {
+    width: 90%;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .form-title {
+    width: 80%;
+  }
+
+  .form-author {
+    width: 80%;
+  }
+
+  #category {
+    width: 80%;
+  }
+
+  .submit {
+    width: 80%;
+  }
+}
