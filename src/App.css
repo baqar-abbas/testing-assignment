@@ -427,8 +427,12 @@ main {
   bottom: 2px;
 }
 
-.crud {
-  text-align: center;
+.custom-font {
+  font-family: Montserrat, sans-serif;
+}
+
+.custom-font-robo {
+  font-family: 'Roboto Slab', serif;
 }
 
 .name-span {
@@ -437,10 +441,4 @@ main {
 
 .email-span {
   margin-right: 40px;
-}
-
-.add-user {
-  margin-left: 5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }

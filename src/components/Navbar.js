@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import { FaUser } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
